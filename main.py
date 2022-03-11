@@ -32,6 +32,6 @@ while True:
      sock.sendto(bytes, (ip,port))
      sent = sent + 1
      port = port + 1
-     print'\033[1;97mSent\033[1;96m %s\033[1;97m Packet To\033[1;92m %s\033[1;97m Throught Port:\033[1;93m%s'%(sent,ip,port),end = '\r'
+     print'\033[1;97mSent\033[1;96m %s\033[1;97m Packet To\033[1;92m %s\033[1;97m Throught Port:\033[1;93m%s'%(sent,ip,port)
      if port == 65534:
        port = 1
